@@ -16,13 +16,13 @@ public class J051_fortest {
 		 *  只能順著印
 		 */
 		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		for (int m = 0; m < a.length; m++) // 順著印
+		for (int m = 0; m < a.length; m++) 		// 順著印
 			System.out.print(a[m] + " ");
 		System.out.println();
 		for (int m = a.length - 1; m >= 0; m--) // 倒著印
 			System.out.print(a[m] + " ");
 		System.out.println();
-		for (int m = 0; m < a.length; m += 2) // 交替印
+		for (int m = 0; m < a.length; m += 2) 	// 交替印
 			System.out.print(a[m] + " ");
 		System.out.println();
 		for (int x : a) // 利用foreach印出陣列內容
