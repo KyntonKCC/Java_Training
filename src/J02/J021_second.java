@@ -10,6 +10,7 @@ import java.util.Scanner;
 //$ java Hello.java
 
 public class J021_second {
+	
 	public static void main(String[] args) {
 		 Scanner keyboard = new Scanner(System.in);
 		// Ctrl+Shift+O:import relative package
@@ -19,10 +20,10 @@ public class J021_second {
         J021_Father daddy = new J021_Father();
         daddy.objectMethod();
 	}
+	
 }
 
-/*
- * 當一個類別裡面的方法，全部都是有加static的類別方法，則此類別，我們稱為工具類別 
+/* 當一個類別裡面的方法，全部都是有加static的類別方法，則此類別，我們稱為工具類別 
  * 例如Math類別,Arrays類別....
  */
 
