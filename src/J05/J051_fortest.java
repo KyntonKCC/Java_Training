@@ -38,8 +38,7 @@ public class J051_fortest {
 		}
 		System.out.println();
 		for (int m = 1; m <= 5; m++) {// 1 2 4 5
-			if (m == 3)
-				continue;
+			if (m == 3) continue;
 			System.out.print(m + " ");
 		}
 		System.out.println();
@@ -51,8 +50,7 @@ public class J051_fortest {
 		for (int p = 1; p <= 5; p++) {
 			System.out.print("p=" + p);
 			for (int m = 1; m <= 5; m++) {
-				if (m == 3)
-					break; // break中斷內迴圈
+				if (m == 3) break; // break中斷內迴圈
 				System.out.print(" m=" + m);
 			}
 			System.out.println();
@@ -61,8 +59,7 @@ public class J051_fortest {
 		for (int p = 1; p <= 5; p++) {
 			System.out.print("p=" + p);
 			for (int m = 1; m <= 5; m++) {
-				if (m == 3)
-					break KyntonKCC;
+				if (m == 3) break KyntonKCC;
 				System.out.print(" m=" + m);
 			}
 			System.out.println();

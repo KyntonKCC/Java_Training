@@ -63,8 +63,8 @@ public class J071_arraytest {
 		int a[] = { 11, 22, 33, 44, 55 };
 		System.out.println(Arrays.toString(a));// [11, 22, 33, 44, 55]
 		Integer b[] = { 66, 3, 77, 150, 88, 2, 99, 500, 100 };
-		List<Integer> asList = Arrays.asList(b);
-		// asList.add(101);//Runtime Exception//asList() return fixed 集合 "固定長度"不能添加
+		List<Integer> asList = Arrays.asList(b);// asList() return fixed 集合
+		// asList.add(101);//Runtime Exception// "固定長度"不能添加
 		ArrayList<Integer> arrayList = new ArrayList<>();
 		arrayList.add(100);// 可以添加
 		Stream<Integer> stream = Arrays.stream(b);// 將陣列轉成資料流

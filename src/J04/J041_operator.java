@@ -1,6 +1,6 @@
 package J04;
 
-enum PowerState {
+enum J041_PowerState {
 	ON, OFF, SUSPEND, ERROR;// 類別變數、常數，皆已加上static,final
 }
 
@@ -8,7 +8,7 @@ public class J041_operator {
 
 	static String name;
 	
-	static String showDescription(PowerState state) {
+	static String showDescription(J041_PowerState state) {
 		switch (state) {
 		case ON:
 			return "努力工作中";
@@ -104,10 +104,10 @@ public class J041_operator {
 			System.out.println("default");
 		}
 
-		J041_Son s = new J041_Son();
-		s.test();
+		J041_Son son = new J041_Son();
+		son.test();
 
-		System.out.println(showDescription(PowerState.SUSPEND));
+		System.out.println(showDescription(J041_PowerState.SUSPEND));
 
 	}
 
