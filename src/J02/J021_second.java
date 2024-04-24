@@ -1,6 +1,6 @@
 package J02;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 //編譯 Hello.java ->
 //$ javac Hello.java
@@ -10,9 +10,8 @@ package J02;
 //$ java Hello.java
 
 public class J021_second {
-
 	public static void main(String[] args) {
-		// Scanner keyboard = new Scanner(System.in);
+		 Scanner keyboard = new Scanner(System.in);
 		// Ctrl+Shift+O:import relative package
 
         J021_Father.staticMethod();
