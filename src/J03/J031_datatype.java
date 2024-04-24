@@ -80,7 +80,7 @@ public class J031_datatype {
 		System.out.println("unicode的71b1 = " + j);
 		char s = 'A';
 		char t = 65;			//十進制
-		char u = 0_101;		//八進制
+		char u = 0_101;			//八進制
 		char v = 0x41;			//十六進制
 		char w = 0b10_000_01;	//二進制
 		char x = '\u0000';		//空字元
