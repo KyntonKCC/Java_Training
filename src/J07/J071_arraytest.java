@@ -72,7 +72,7 @@ public class J071_arraytest {
 		stream.forEach(System.out::println);// 方法參照
 		Arrays.sort(b);// 排序
 		for (int x : b)
-			System.out.print(x + "\t");
+			System.out.printf("%d ", x);
 		System.out.println();
 		int w[] = { 1, 2, 3, 4, 5 };
 		int x[] = { 1, 2, 3, 4, 5 };

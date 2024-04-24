@@ -35,7 +35,7 @@ public class J041_operator {
 		final byte e = 10; 	// 加final後為常數，不能再更改
 		short f = 10;
 		f = e; 				// 自動轉型
-		// e = (byte)f; 	//加final,無法強制轉型
+		// e = (byte)f; 	// 加final,無法強制轉型
 		// The final local variable e cannot be assigned. It must be blank and not using a compound assignment
 		short g = 257; 		// 100000001
 		byte h = (byte) g; 	//  00000001 //只保留8位元
@@ -106,8 +106,11 @@ public class J041_operator {
 
 		J041_Son son = new J041_Son();
 		son.test();
-
+		
+		System.out.println(showDescription(J041_PowerState.ON));
+		System.out.println(showDescription(J041_PowerState.OFF));
 		System.out.println(showDescription(J041_PowerState.SUSPEND));
+		System.out.println(showDescription(J041_PowerState.ERROR));
 
 	}
 

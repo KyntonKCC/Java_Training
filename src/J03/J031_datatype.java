@@ -40,7 +40,7 @@ public class J031_datatype {
 		 */
 		int A = 10;
 		System.out.println("A = " + A); 				// 印區域變數age
-		System.out.println("A = " + J031_datatype.A); 	// 印類別變數age
+		System.out.println("A = " + J031_datatype.A); 	// 印全域類別變數age
 		System.out.println("B = " + B);
 		test();
 		int C = 180;
