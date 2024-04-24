@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class J021_second {
 	
 	public static void main(String[] args) {
-		 Scanner keyboard = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
 		// Ctrl+Shift+O:import relative package
 
         J021_Father.staticMethod();
