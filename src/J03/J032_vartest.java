@@ -21,7 +21,7 @@ public class J032_vartest {
 			System.out.println("相等");
 		else
 			System.out.println("奇怪哩,怎麼不相等");
-
+		
 	}
 
 }

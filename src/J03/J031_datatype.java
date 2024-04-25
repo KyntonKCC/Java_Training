@@ -4,12 +4,11 @@ public class J031_datatype {
 
 	static int A;
 	static int B = 300;
-
 	static void test() {
 		System.out.println("B = " + B);
 		// System.out.println("C = " + C);//C cannot be resolved to a variable
 	}
-
+	
 	/* 若存在global或heap區的變數(類別變數,或物件變數) 
 	 * ,編譯器會自動給訂初值,不同資料的初值如下 
 	 * 整數 0 
@@ -23,7 +22,6 @@ public class J031_datatype {
 	static boolean booleanVar;
 
 	public static void main(String[] args) {
-
 		/* 變數命名規則的法律問題 
 		 * 1.變數名稱首字母一定為英文字母 , 或 _ 或 $ 其他皆不同當首字母 
 		 * 2.變數名稱可為英文字或數字,但不能有特殊符號 + - / = ... 
@@ -99,7 +97,7 @@ public class J031_datatype {
 		System.out.println("doubleVar = \t" + doubleVar);
 		System.out.println("charVar = \t" + charVar);
 		System.out.println("booleanVar = \t" + booleanVar);
-
+		
 	}
 
 }

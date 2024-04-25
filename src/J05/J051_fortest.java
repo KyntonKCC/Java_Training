@@ -85,7 +85,7 @@ public class J051_fortest {
 			no3 = no1 + no2;
 		}
 		System.out.println();
-
+		
 	}
 
 }

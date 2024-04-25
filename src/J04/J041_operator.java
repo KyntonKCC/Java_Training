@@ -7,7 +7,6 @@ enum J041_PowerState {
 public class J041_operator {
 
 	static String name;
-	
 	static String showDescription(J041_PowerState state) {
 		switch (state) {
 		case ON:
@@ -50,10 +49,8 @@ public class J041_operator {
 		System.out.println(1 + "2" + 3);// 123
 		System.out.println(1 + 2 + "3");// 33
 		System.out.println('1' + 2 + "3");// 513
-		// A -> 65
-		// a -> 97
-		// 0 -> 48
-		// 1 -> 49
+		// A -> 65 a -> 97
+		// 0 -> 48 1 -> 49
 
 		/* 格式化輸出 printf() 
 		 * 語法 printf("格式字元",變數); 
@@ -79,7 +76,7 @@ public class J041_operator {
 		System.out.println(k);
 		int aa = 5, bb = 5, cc = 0;
 		cc = ++aa + bb++ + ++aa;
-		System.out.printf("aa = %d, bb = %d, cc = %d%n", aa, bb, cc);// a=7,b=6,c=18
+		System.out.printf("aa = %d, bb = %d, cc = %d%n", aa, bb, cc);// aa=7,bb=6,cc=18
 		// ^ XOR 相同為0相異為1
 		System.out.println(10 > 3 ^ 10 > 3);// false
 		System.out.println(10 > 3 ^ 10 < 3);// true
@@ -111,7 +108,7 @@ public class J041_operator {
 		System.out.println(showDescription(J041_PowerState.OFF));
 		System.out.println(showDescription(J041_PowerState.SUSPEND));
 		System.out.println(showDescription(J041_PowerState.ERROR));
-
+		
 	}
 
 }

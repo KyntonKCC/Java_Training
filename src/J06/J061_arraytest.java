@@ -86,7 +86,7 @@ public class J061_arraytest {
 				System.out.print(y + "\t");
 			System.out.println();
 		}
-
+		
 	}
 
 }

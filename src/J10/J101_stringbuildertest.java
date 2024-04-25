@@ -3,6 +3,30 @@ package J10;
 public class J101_stringbuildertest {
 
 	public static void main(String[] args) {
+		//String與StringBuilder的差異性
+		String s = "KyntonKCC";
+		s = s.concat("java").replace("n","ok").substring(3,9);
+		//KyntonKCCjava -> KyoktookKCCjava -> ktookK
+		System.out.println(s);
+		StringBuilder sa = new StringBuilder();
+		System.out.println(sa.length());	//0
+		System.out.println(sa.capacity());	//16
+		StringBuilder sb = new StringBuilder("KyntonKCC");
+		sb.replace(2,5,"ok");			//KyoknKCC
+		sb.delete(2,4);					//KynKCC
+		sb.insert(2,"java");			//KyjavanKCC
+		sb.substring(2,6);				//java
+		System.out.println(sb);			//KyjavanKCC	//StringBuilder 沒有 substring 的方法
+		String sub = sb.substring(2,6);	//java 轉為String
+		System.out.println(sub);		//java
+		StringBuilder sc = new StringBuilder("KyntonKCC");
+		//sb1.replace(2,5,"ok").delete(2,4).insert(2,"java").substring(2,6).replace(2,4,"hello");
+		//String字串類replace"語法"錯誤		
+		//substring( )後轉為String
+		String suc = sc.replace(2,5,"ok").delete(2,4).insert(2,"java").replace(2,4,"hello").substring(2,6).replace("e","hello");
+		//KyoknKCC -> KynKCC -> KyjavanKCC -> KyhellovanKCC -> hell -> hhelloll
+		System.out.println(suc);
+		
 		J101_Person p1 = new J101_Person();
 		J101_Person p2 = new J101_Person();
 		J101_Person p3 = new J101_Person();

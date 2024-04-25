@@ -49,7 +49,6 @@ public class J081_stringtest {
 class J081_Person {
 	String name;
 	int age;
-
 	void test() {
 		System.out.println("這是人類類別的test方法");
 	}

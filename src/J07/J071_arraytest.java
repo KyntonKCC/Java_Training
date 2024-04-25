@@ -6,29 +6,29 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class J071_arraytest {
+	
 	int age;
-
 	void setAge(int age) {
 		this.age = age;
 	}
 
 	public static void main(String[] args) {
-//		int a[][] = { { 0, 1, 2 }, { 9, 9, 9, 9 } };
-//		System.out.println(a.length);	// 2
-//		System.out.println(a[0].length);// 3
-//		System.out.println(a[1].length);// 4
-//		System.out.println(a[1].getClass().isArray());// true
-//		System.out.println(a[0][1]);	// 1
+		int a0[][] = { { 0, 1, 2 }, { 9, 9, 9, 9 } };
+		System.out.println(a0.length);		// 2
+		System.out.println(a0[0].length);	// 3
+		System.out.println(a0[1].length);	// 4
+		System.out.println(a0[1].getClass().isArray());// true
+		System.out.println(a0[0][1]);		// 1
 
-//		int array[] = { 5, 4, 3, 2, 1 };
-//		System.out.println(array);// 印hashcode 雜湊碼
-//		System.out.println(Arrays.toString(array));// [5 4 3 2 1]
-//		System.arraycopy(array, 3, array, 2, 2);
-//		// System.arraycopy(複製的來源陣列,陣列開始的索引值,複製到目的地,的哪個索引值,複製的長度);
-//		System.out.println(Arrays.toString(array));// [5 4 2 1 1]
-//		for (int x : array)
-//			System.out.print(x + "\t");
-//		System.out.println();
+		int array[] = { 5, 4, 3, 2, 1 };
+		System.out.println(array);// 印hashcode 雜湊碼
+		System.out.println(Arrays.toString(array));// [5 4 3 2 1]
+		System.arraycopy(array, 3, array, 2, 2);
+		// System.arraycopy(複製的來源陣列,陣列開始的索引值,複製到目的地,的哪個索引值,複製的長度);
+		System.out.println(Arrays.toString(array));// [5 4 2 1 1]
+		for (int x : array)
+			System.out.print(x + "\t");
+		System.out.println();
 
 //		// run as -> run configuration -> arguments
 //		System.out.println(args);
@@ -36,22 +36,22 @@ public class J071_arraytest {
 //		System.out.println(args[1]);
 //		System.out.println(args[2]);
 
-//		int a1[] = { 1, 2, 3, 4 };
-//		int a2[] = { 1, 3, 5, 7, 9, 11, 13 };
-//		a2 = a1;// 將a1的記憶體位置指定給a2
-//		for (int i : a2)
-//			System.out.print(i + " ");
+		int a1[] = { 1, 2, 3, 4 };
+		int a2[] = { 1, 3, 5, 7, 9, 11, 13 };
+		a2 = a1;// 將a1的記憶體位置指定給a2
+		for (int i : a2)
+			System.out.print(i + " ");
+		System.out.println();
+		System.out.println(new J071_arraytest().age);// 0
+		J071_arraytest amy = new J071_arraytest();
+		System.out.println(amy.age);// 0
+		amy.setAge(25);
+		System.out.println(amy.age);// 25
 
-//		System.out.println(new J071_arraytest().age);// 0
-//		J071_arraytest amy = new J071_arraytest();
-//		System.out.println(amy.age);// 0
-//		amy.setAge(25);
-//		System.out.println(amy.age);// 25
-
-//		String[] stars = { "Venus", "Earth", "Sun", "Moon" };
-//		System.out.println(stars.length + " " + stars[1].length());
-//		// 陣列長度用"屬性" 陣列名稱.length
-//		// 字串長度用"方法" 字串.length()
+		String[] stars = { "Venus", "Earth", "Sun", "Moon" };
+		System.out.println(stars.length + " " + stars[1].length());
+		// 陣列長度用"屬性" 陣列名稱.length
+		// 字串長度用"方法" 字串.length()
 
 		/* toString( )將陣列轉成字串  
 		 * asList( )將陣列轉成"固定長度"的List  

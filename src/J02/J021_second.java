@@ -19,6 +19,7 @@ public class J021_second {
 		// J021_Father.objectMethod();//此行錯誤，無法直接呼叫物件方法
 		J021_Father daddy = new J021_Father();
 		daddy.objectMethod();
+		
 	}
 
 }
@@ -32,7 +33,6 @@ class J021_Father {
 	static void staticMethod() {
 		System.out.println("這是類別方法");
 	}
-
 	// 物件方法，不可以直接呼叫，需產生類別物件後，再利用物件.物件方法來呼叫
 	void objectMethod() {
 		System.out.println("這是物件方法");
