@@ -11,6 +11,9 @@ public class J111_exam {
 		System.out.println("這是物件變數的" + this.C);
 	}
 	static String args[] = { "hello", "java", "how", "are", "you" };
+	
+	//18.
+	static int i=7;
 
 	public static void main(String[] args) {
 		// 1.
@@ -130,6 +133,15 @@ public class J111_exam {
 		System.out.println(args[1] + " " + args[2] + " " + args[3] + " " + "jumping");
 		System.out.println(J111_exam.args[1] + " " + J111_exam.args[2] + " " + J111_exam.args[3] + " " + "jumping");
 
+		// 18.
+		J111_exam obj = new J111_exam();
+		obj.i++;
+		System.out.println(J111_exam.i + " " + obj.i);
+		J111_exam.i++;
+		System.out.println(J111_exam.i + " " + obj.i);
+		obj.i++;
+		System.out.println(J111_exam.i + " " + obj.i);
+		
 	}
 
 }
