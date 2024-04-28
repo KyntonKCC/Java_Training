@@ -11,8 +11,8 @@ public class J211_threadtest {
 		 */
 
 		// 3.new 子類繼承
-		J211_MyThread t1 = new J211_MyThread("自訂執行緒");
-		J211_MyThread t2 = new J211_MyThread("路人乙");
+		J211_MyThread1 t1 = new J211_MyThread1("自訂執行緒");
+		J211_MyThread1 t2 = new J211_MyThread1("路人乙");
 		t1.setName("路人甲");
 		// 4.啟動執行緒
 		// t1.run();//無交替效果
@@ -29,8 +29,8 @@ public class J211_threadtest {
 
 // 方式一 繼承 Thread 類
 // 1.宣告類別繼承 Thread 類
-class J211_MyThread extends Thread {
-	J211_MyThread(String msg) {
+class J211_MyThread1 extends Thread {
+	J211_MyThread1(String msg) {
 		super(msg);
 	}
 

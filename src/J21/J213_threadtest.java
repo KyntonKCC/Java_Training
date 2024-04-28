@@ -7,7 +7,7 @@ public class J213_threadtest {
 
 	public static void main(String[] args) throws Exception{
 		// 3.new 實作 Callable 類別物件
-		J213_MyThread my = new J213_MyThread();
+		J213_MyThread1 my = new J213_MyThread1();
 		FutureTask task = new FutureTask(my);
 		// 4.將 FutureTask 的物件,當參數傳給 Thread 建構子
 		Thread t1 = new Thread(task, "自訂執行緒");
@@ -24,7 +24,7 @@ public class J213_threadtest {
 
 // 方式三
 // 1.宣告類別實作 Callable 介面
-class J213_MyThread implements Callable<Integer> {
+class J213_MyThread1 implements Callable<Integer> {
 // 2.實作 call 方法
 	@Override
 	public Integer call() throws Exception {

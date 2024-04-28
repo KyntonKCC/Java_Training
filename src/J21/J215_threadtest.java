@@ -25,7 +25,7 @@ class J215_MyThread1 extends Thread {
 		super(msg);
 	}
 
-	static int ticket = 200;
+	static int ticket = 500;
 //	static Object obj = new Object();
 
 	@Override
@@ -36,11 +36,11 @@ class J215_MyThread1 extends Thread {
 					ticket--;
 					System.out.println(getName() + " : 還剩下" + ticket + "張");
 				}
-				try {
-					sleep(100);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+			}
+			try {
+				sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
 	}
