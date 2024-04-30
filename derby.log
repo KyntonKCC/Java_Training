@@ -1,0 +1,26 @@
+----------------------------------------------------------------
+Tue Apr 30 23:01:56 CST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018f-2f86-d59b-00000f515c60 
+on database directory C:\IMPROVEMYSELF\Java_Training\ocp819\J266_databasetest_hello1 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e25154f 
+Loaded from file:/C:/IMPROVEMYSELF/Java_Training/ocp819/libs/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.4.1+1-LTS-2
+user.dir=C:\IMPROVEMYSELF\Java_Training\ocp819
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Apr 30 23:01:57 CST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance e66540fa-018f-2f86-d59b-00000f515c60 
+on database directory C:\IMPROVEMYSELF\Java_Training\ocp819\J266_databasetest_hello2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e25154f 
+Loaded from file:/C:/IMPROVEMYSELF/Java_Training/ocp819/libs/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.4.1+1-LTS-2
+user.dir=C:\IMPROVEMYSELF\Java_Training\ocp819
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
