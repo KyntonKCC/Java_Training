@@ -40,13 +40,9 @@ public class J269_databaseok {
 			public void mouseClicked(MouseEvent e) {
 				try {
 					if (rs.next()) {
-
 						member.textID.setText(String.valueOf(rs.getInt("ID")));
-
 						member.textName.setText(rs.getString("NAME"));
-
 						member.textSex.setText(rs.getString("SEX"));
-
 						member.textEmail.setText(rs.getString("EMAIL"));
 					}
 				} catch (SQLException ea) {
@@ -58,13 +54,9 @@ public class J269_databaseok {
 			public void mouseClicked(MouseEvent e) {
 				try {
 					if (rs.previous()) {
-
 						member.textID.setText(String.valueOf(rs.getInt("ID")));
-
 						member.textName.setText(rs.getString("NAME"));
-
 						member.textSex.setText(rs.getString("SEX"));
-
 						member.textEmail.setText(rs.getString("EMAIL"));
 					}
 				} catch (SQLException ea) {
